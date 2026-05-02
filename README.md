@@ -31,8 +31,7 @@
 - `/speckit.constitution`부터 `/speckit.implement`까지 흐름을 설명할 수 있다.
 - baseline-v1.0 태그가 있는 기준선을 만든다.
 
-
-# /speckit.constitution 실습
+# `/speckit.constitution` 실습
 
 ```
 /speckit.constitution 이프로젝트는 CLI 기반 ToDo 관리 앱을 만듭니다.
@@ -52,4 +51,18 @@
 원치5. CLI 도구 구현
 이 프로젝트는 터미널 CLI 도구를 만든다.
 REST API 서버, GUI, 웹 인터페이스는 이 프로젝트의 범위 밖입니다.
+```
+
+# `/speckit.specify` 실습
+
+```
+/speckit.specify 
+CLI 기반의 ToDo 관리 앱을 만듭니다.
+사용자: 터미널을 사용하는 개인 개발자 
+주요기능:
+1. ToDo 항목 추가: 제목(필수), 마감일(선택), 우선순위(선택)
+2. 전체 목록 조회: 완료/미완료/우선순위로 필터링 가능
+3. 항목 완료 처리: 항목 ID로 완료 표시
+4. 항목 삭제: 항목 ID로 삭제
+기술스택은 아직 미정
 ```
