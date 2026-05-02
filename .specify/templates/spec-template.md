@@ -123,6 +123,14 @@
 -->
 
 - [Assumption about target users, e.g., "Users have stable internet connectivity"]
-- [Assumption about scope boundaries, e.g., "Mobile support is out of scope for v1"]
+- [Assumption about scope boundaries, e.g., "REST API, GUI, web interface are out of scope; CLI only"]
 - [Assumption about data/environment, e.g., "Existing authentication system will be reused"]
 - [Dependency on existing system/service, e.g., "Requires access to the existing user profile API"]
+
+## Constitution Alignment *(mandatory)*
+
+- **Layer Separation**: Explain where business logic lives and how CLI I/O is isolated.
+- **Test-First Evidence**: Define tests that will be written before implementation starts.
+- **Dependency Review**: List any new dependencies and justify why stdlib/existing code is insufficient.
+- **Simplicity Check**: Note abstractions intentionally avoided and complexity trade-offs.
+- **CLI Scope Guardrail**: Confirm no REST API, GUI, or web interface deliverables are included.
