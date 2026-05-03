@@ -73,3 +73,44 @@ CLI 기반의 ToDo 관리 앱을 만듭니다.
 specs/001-cli-todo-app/spec.md의 [NEEDS CLARIFICATION] 항목들을 하나씩 해소하고자합니다.
 각 항목에 대해 선택지를 제시하고, 내가 선택하면 spec.md를 업데이트합니다.
 ```
+
+# `/speckit.plan` 실습
+
+```
+/speckit.plan
+specs/001-cli-todo-app/spec.md를 기반으로 구현 계획을 작성해줘.
+
+[constitution 원칙 1 - 레이어 분리]
+레이어 구조:
+- 비즈니스 레이어: todo_lib/ 폴더 (독립 패키지)
+- CLI 레이어: cli/ 폴더 (todo_lib 호출만 담당)
+- 테스트: tests/ 폴더
+
+[constitution 원칙 2 - 테스트 우선]
+테스트 도구:
+- 테스트 프레임워크: pytest
+- 커버리지 측정: pytest-cov
+
+[constitution 원칙 3 - 최소 의존성]
+사용할 패키지 (최소 한도):
+- 런타임: typer, sqlalchemy
+- 개발(dev): pytest, pytest-cov
+- 이 목록 외 패키지는 추가하지 않는다
+
+[constitution 원칙 4 - 단순함 우선]
+구현 방식:
+- 추상 인터페이스(예: ITodoRepository) 사용 금지
+- 단순 함수와 클래스로 직접 구현
+
+[constitution 원칙 5 - CLI 도구]
+CLI 명령어 인터페이스:
+- todo add "<제목>" [--due YYYY-MM-DD] [--priority high|medium|low]
+- todo list [--filter done|pending] [--priority high|medium|low]
+- todo done <id>
+- todo delete <id>
+
+언어: Python 3.12
+패키지 관리: uv
+데이터 저장소: SQLite (로컬 파일기반, 서버 불필요)
+
+```
