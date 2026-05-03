@@ -37,8 +37,8 @@
 **Acceptance Scenarios**:
 
 1. **Given** 저장된 항목이 있을 때, **When** `todo list` 실행, **Then** 전체 항목이 ID·제목·마감일·우선순위·완료여부와 함께 출력된다.
-2. **Given** 미완료 항목만 보고 싶을 때, **When** `todo list --status pending` 실행, **Then** 미완료 항목만 필터링되어 출력된다.
-3. **Given** 완료 항목만 보고 싶을 때, **When** `todo list --status done` 실행, **Then** 완료 항목만 필터링되어 출력된다.
+2. **Given** 미완료 항목만 보고 싶을 때, **When** `todo list --filter pending` 실행, **Then** 미완료 항목만 필터링되어 출력된다.
+3. **Given** 완료 항목만 보고 싶을 때, **When** `todo list --filter done` 실행, **Then** 완료 항목만 필터링되어 출력된다.
 4. **Given** 우선순위 기준으로 보고 싶을 때, **When** `todo list --priority high` 실행, **Then** 해당 우선순위 항목만 출력된다.
 5. **Given** 저장된 항목이 없을 때, **When** `todo list` 실행, **Then** "항목이 없습니다" 메시지가 출력된다.
 
