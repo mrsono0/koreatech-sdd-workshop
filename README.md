@@ -66,3 +66,10 @@ CLI 기반의 ToDo 관리 앱을 만듭니다.
 4. 항목 삭제: 항목 ID로 삭제
 기술스택은 아직 미정
 ```
+
+# `/speckit.clarify` 실습
+
+```
+specs/001-cli-todo-app/spec.md의 [NEEDS CLARIFICATION] 항목들을 하나씩 해소하고자합니다.
+각 항목에 대해 선택지를 제시하고, 내가 선택하면 spec.md를 업데이트합니다.
+```
